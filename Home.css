@@ -1,0 +1,66 @@
+:root{
+    --Background: #0D1117;
+    --Primary: #E6EDF3;
+    --Accent: #00C9A7;
+    --Secondary: #FF6EC;
+    --Button: #3B82F6;
+}
+body{
+    background-color:var(--Background);
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header-Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50px 50px 50px 50px;
+    color: var(--Primary);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px var(--Button);
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 50px;
+    cursor: pointer;
+}
+.Header-Button:hover{
+    width:220px;
+    font-size: 28px;
+}
+.main-header-wrapper{
+    display: none;
+}
+.main-Header{
+   width:600px;
+   height:50px;
+   border:1px solid white;
+   border-radius: 50px 50px 50px 50px;
+   position: relative;
+   top: 100px;
+   box-shadow: 0px 0px 5px var(--Button);
+}
+.Wrapper-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0 0 5px var(--Button);
+}
+.main-Header a{
+    color: var(--Primary);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+}
+.main-Header a:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
