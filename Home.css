@@ -3,10 +3,22 @@
     --Primary: #E6EDF3;
     --Accent: #00C9A7;
     --Secondary: #FF6EC;
-    --Button: #3B82F6;
+    --Button: #00f7ff;
 }
 body{
     background-color:var(--Background);
+    display: flex;
+    flex-direction: column;
+
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Background);
+  z-index: -1; 
 }
 .Header{
     display: flex;
@@ -19,7 +31,7 @@ body{
     justify-content: center;
     width: 200px;
     height: 50px;
-    border: 1px solid white;
+    border: 1px solid var(--Button);
     border-radius: 50px 50px 50px 50px;
     color: var(--Primary);
     font-family: "Space Grotesk", sans-serif;
@@ -36,14 +48,17 @@ body{
 }
 .main-header-wrapper{
     display: none;
+    z-index: 100;
 }
 .main-Header{
    width:600px;
    height:50px;
-   border:1px solid white;
+   border:1px solid var(--Button);
    border-radius: 50px 50px 50px 50px;
-   position: relative;
-   top: 100px;
+   position: fixed;
+   top: 120px;
+   left : 50%;
+   transform: translateX(-50%);
    box-shadow: 0px 0px 5px var(--Button);
 }
 .Wrapper-header{
@@ -63,4 +78,28 @@ body{
 .main-Header a:hover{
     font-size: 18px;
     text-decoration: underline;
+}
+.Main-body {
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Profphoto{
+
+    height:700px;
+    width: 700px;
+    background-image: url("./Professionalphoto1.png");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    right:60%; 
 }

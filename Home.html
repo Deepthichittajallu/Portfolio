@@ -10,6 +10,7 @@
     <title>About</title>
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="Header">
         <div class="Header-Button">
             <ul><li></li></ul>Deeprints<ul><li></li></ul>
@@ -26,6 +27,46 @@
         </div>
         </div>
     </div>
-    <script src="Home.js"></script>
+    <div class="Main-body">
+        <div class="photo">
+            <div class="Profphoto"></div>
+        </div>
+        <div class="side-content">
+            1111111111111
+        </div>
+    </div>
+    <script src="particles.min.js"></script>
+    <script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 },
+      "color": { "value": "#66fbff" }, 
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.8 },
+      "size": { "value": 4, "random": true },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#66fbff",
+        "opacity": 0.6,
+        "width": 2
+      },
+      "move": { "enable": true, "speed": 3 }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "grab" },
+        "onclick": { "enable": true, "mode": "push" }
+      },
+      "modes": {
+        "grab": { "distance": 200, "line_linked": { "opacity": 1 } },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
 </body>
+    <script src="Home.js"></script>
 </html>
