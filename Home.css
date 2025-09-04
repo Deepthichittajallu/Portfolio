@@ -9,7 +9,7 @@ body{
     background-color:var(--Background);
     display: flex;
     flex-direction: column;
-
+   transition: all 0.5s ease;
 }
 #particles-js {
   position: fixed;
@@ -41,6 +41,7 @@ body{
     position: fixed;
     top: 50px;
     cursor: pointer;
+    z-index: 200;
 }
 .Header-Button:hover{
     width:220px;
@@ -83,9 +84,9 @@ body{
   width: 100%;
   min-height: 100vh; 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .photo{
     display: flex;
@@ -101,5 +102,111 @@ body{
     background-size: cover;
     object-fit: cover;
     position: relative;
-    right:60%; 
+    right:10%;
+}
+.side-box{
+    left:50%;
+    width:450px;
+    height: 300px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+    margin-top: 20px;
+}
+.side-box p{
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    /* text-align: left; */
+    padding-left: 30px;
+}
+.content-1{
+    padding-top: 20px;
+    line-height: 2rem;
+
+}
+.text{
+    display: flex;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typed{
+    display: inline-block;
+    animation: typing 4s steps(23) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+    color: white;
+    font-size: 30px;
+}
+.cursor{
+    display: inline-block;
+    width: 2px;
+    background-color: white;
+    margin-left: 5px;
+    animation: blink 0.8 step-end infinite;
+}
+@keyframes typing {
+    from{max-width: 0;}
+    to {max-width: 30ch;}
+    
+}
+@keyframes blink {
+    50%{opacity:0;}
+}
+.para{
+    color: white;
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding-right: 5px;
+}
+.side-content{
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 50px;
+}
+.icon i{
+    text-decoration: none;
+    color: var(--Button);
+    font-size: 30px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 3 var(--Button);
+}
+.resume{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.resume button{
+    width: 120px;
+    height: 40px;
+    font-family: "Space Grotesk", sans-serif;;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid var(--Button);
+    box-shadow: 0px 0px 5px var(--Button);
+    color: white;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.resume button:hover{
+    transform: translate(10px,-10px);
+}
+.Projects h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    font-family: "Space Grotesk", sans-serif;
+    text-shadow: 0 0 5px var(--Button);
 }
