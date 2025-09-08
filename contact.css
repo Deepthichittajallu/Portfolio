@@ -1,0 +1,266 @@
+:root{
+    --Background: #0D1117;
+    --Primary: #E6EDF3;
+    --Accent: #00C9A7;
+    --Secondary: #FF6EC;
+    --Button: #00f7ff;
+}
+body{
+    background-color:var(--Background);
+    display: flex;
+    flex-direction: column;
+   transition: all 0.5s ease;
+   scroll-behavior: smooth;
+   font-family: "Space Grotesk", sans-serif;
+   overflow-x: hidden;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Background);
+  z-index: -1; 
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header-Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--Button);
+    border-radius: 50px 50px 50px 50px;
+    color: var(--Primary);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px var(--Button);
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 50px;
+    cursor: pointer;
+    z-index: 200;
+}
+.Header-Button:hover{
+    width:220px;
+    font-size: 28px;
+}
+.main-header-wrapper{
+    display: none;
+    z-index: 100;
+}
+.main-Header{
+   width:600px;
+   height:50px;
+   /* border:1px solid var(--Button); */
+   backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+   position: fixed;
+   top: 120px;
+   left : 50%;
+   transform: translateX(-50%);
+   box-shadow: 0px 0px 5px var(--Button);
+}
+.Wrapper-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0 0 5px var(--Button);
+}
+.main-Header a{
+    color: var(--Primary);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+}
+.main-Header a:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
+/* .Contact-Header
+{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+}
+.contact
+{
+    margin-top: 170px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 5px var(--Button);
+}
+.contact-para{
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 5px var(--Button);
+} */
+/* .contact-body{
+    display: flex;
+    align-items: center;
+    justify-content: space space-around;
+}
+.anime{
+    position: relative;
+    margin-top: 80px;
+    left: 140px;
+    height: 600px;
+    width: 600px;
+}
+.contact-box-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    position: relative;
+    left: 300px;
+    margin-top: 150px;
+    border: 1px solid var(--Button);
+    backdrop-filter: blur(6px) saturate(143%);
+    -webkit-backdrop-filter: blur(6px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+} */
+ .contact-body {
+    display: flex;
+    justify-content: space-around; /* valid */
+    align-items: flex-start;
+    flex-wrap: wrap; /* stacks on smaller screens */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.anime {
+    margin-top: 80px;
+    height: 400px;   /* smaller for responsiveness */
+    width: 400px;
+    position: relative; /* remove left offset */
+    left: 0;
+}
+
+.contact-box-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: auto;     /* allow to grow naturally */
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid var(--Button);
+    backdrop-filter: blur(6px) saturate(143%);
+    -webkit-backdrop-filter: blur(6px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+}
+
+.box-heading{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 16px;
+    text-shadow: 0 0 5px var(--Button);
+}
+.name,.email,.message{
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20px;
+    text-shadow: 0 0 5px var(--Button);
+}
+/* .name-input,.email-input{
+    color: white;
+    width: 450px;
+    height: 30px;
+    backdrop-filter: blur(6px) saturate(143%);
+    -webkit-backdrop-filter: blur(6px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+    box-shadow: 0 0 5px var(--Button);
+} */
+ .name-input, .email-input, .message-input {
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    width: 450px;
+    padding: 10px;
+    margin-top: 0px;
+    backdrop-filter: blur(6px) saturate(143%);
+    -webkit-backdrop-filter: blur(6px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px var(--Button);
+    font-size: 16px;
+}
+/* .message-input{
+    color: white;
+    width: 450px;
+    height: 120px;
+    backdrop-filter: blur(6px) saturate(143%);
+    -webkit-backdrop-filter: blur(6px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+    box-shadow: 0 0 5px var(--Button);
+} */
+ .message-input {
+    height: 100px;
+    resize: none; /* prevent resizing */
+}
+.sub-btn{
+    font-family: "Space Grotesk", sans-serif;
+    color:white;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 2px solid var(--Button);
+    box-shadow: 0 0  5px var(--Button);
+    margin-top: 20px;
+}
+.sub-btn:hover{
+    width: 120px;
+    font-size: 18px;
+}
+.anime-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 80px;
+}
+.anime-text h2 {
+    color: white;
+    margin-top: 20px;
+    font-size: 28px;
+    text-shadow: 0 0 5px var(--Button);
+}
+
+.anime-text p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+    /* margin-top: 10px; */
+    max-width: 400px;
+}
+

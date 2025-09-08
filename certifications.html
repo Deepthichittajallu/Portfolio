@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Home.css"/>
+    <link rel="stylesheet" href="skills.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-
-    <title>About</title>
+<title>Skills</title>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -21,7 +20,7 @@
         <div class="main-header-wrapper">
             <div class="main-Header">
             <div class="Wrapper-header">
-                <a href="Home.html">Home</a>
+                <a href="Home.html">Projects</a>
                 <a href="internship.html">Internships</a>
                 <a href="skills.html">Skills</a>
                 <a href="certifications.html">Certifications</a>
@@ -30,39 +29,22 @@
         </div>
         </div>
     </div>
-    <div class="Main-body">
-        <div class="photo">
-            <div class="Profphoto"></div>
-        </div>
-        <div class="side-content">
-          <div class="side-box">
-          <div class="content-1">
-                <p>Hey, Hope you are doing Great<br/>
-          This is Deepthi Chittajallu</p>
-          </div>
-          <p class="text">
-              <span class="typed"></span><span class="cursor">&nbsp;</span>
-          </p>
-          <p class="para">
-            I’m a skilled Frontend Developer and competitive programmer with expertise in HTML5, CSS, JavaScript, React.js, Express.js, and MongoDB. Proficient in C++, C, Python, and Java, I code efficiently and adapt quickly to client needs.
-          </p>
-        </div>
-        <div class="icons">
-          <div class="icon"><a href="www.linkedin.com/in/deepthichittajallu" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-          <div class="icon"><a href="https://github.com/Deepthichittajallu" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-          <div class="icon"><a href="mailto:chlakshmideepthi06@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
-        </div>
-        <div class="resume">
-            <button>View Resume</button>
-            <button>Get Started</button>
-        </div>
+<div class="sub-heading">
+        <div class="head">Skills</div>
+    </div>
+    <div class="skill-head">
+        <div class="skill-box">
+            <a href="#" data-skill="coding" class="active">Coding</a>
+            <a href="#" data-skill="frontend">Frontend</a>
+            <a href="#" data-skill="database">Database</a>
+            <a href="#" data-skill="tools">Tools</a>
         </div>
     </div>
-    <div class = "Projects" id="Proj">
-    </div>
+<div id="skills-content" class="skills-section"></div>
+
     <script src="particles.min.js"></script>
     <script>
-  particlesJS("particles-js", {
+    particlesJS("particles-js", {
     "particles": {
       "number": { "value": 80 },
       "color": { "value": "#00f7ff" }, 
@@ -91,28 +73,7 @@
     },
     "retina_detect": true
   });
-  lottie.loadAnimation({
-    container: document.getElementsByClassName("Lottie-anime")[0], // the container element
-    renderer: 'svg', 
-    loop: true,      // loop animation
-    autoplay: true,  // start automatically
-    path: './Book.json' // path to your Lottie JSON file
-  });
-   lottie.loadAnimation({
-    container: document.getElementsByClassName("Lottie-anime")[1], // the container element
-    renderer: 'svg', 
-    loop: true,      // loop animation
-    autoplay: true,  // start automatically
-    path: './Careernest.json' // path to your Lottie JSON file
-  });
-   lottie.loadAnimation({
-    container: document.getElementsByClassName("Lottie-anime")[2], // the container element
-    renderer: 'svg', 
-    loop: true,      // loop animation
-    autoplay: true,  // start automatically
-    path: './Dogwalking.json' // path to your Lottie JSON file
-  });
-</script>
-<script src="Home.js"></script>
+  </script>
+  <script src="skills.js"></script>
 </body>
 </html>

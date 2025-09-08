@@ -47,3 +47,79 @@ function typeEffect() {
   }
 }
 typeEffect();
+const projects = [
+  {
+    title: "BookMate",
+    desc: `BookMate is a modern and clean web platform designed to help students prepare for interviews, stay on track with semester exam prep<br><br>
+           Whether you're aiming to crack campus placements or pass finals stress-free, BookMate is your personal academic sidekick.`,
+    link: "https://deepthichittajallu.github.io/BookMate/bookmate.html",
+    lottie: "Book.json"
+  },
+  {
+    title: "Careernest",
+    desc: `Careernest is a career guidance and resource platform built to help students and professionals discover opportunities, learn essential skills, and prepare for their career paths.`,
+    link: "https://careernest-121.vercel.app/",
+    lottie: "Careernest.json"
+  },
+  {
+    title: "Find Chico",
+    desc: `BookMate is a modern and clean web platform designed to help students prepare for interviews, stay on track with semester exam prep, and boost their confidence.`,
+    link: "https://deepthichittajallu.github.io/Chico-game/",
+    lottie: "Dogwalking.json"
+  }
+];
+const container = document.getElementById("Proj");
+const wrapper = document.createElement("div");
+wrapper.classList.add("Projects");
+const heading = document.createElement("h1");
+heading.textContent = "My Projects";
+wrapper.appendChild(heading);
+projects.forEach((project, index) => {
+  const section = document.createElement("div");
+  section.classList.add("Project-section");
+
+  const lottieDiv = document.createElement("div");
+  lottieDiv.classList.add("Lottie-anime");
+  lottie.loadAnimation({
+    container: lottieDiv,
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: project.lottie
+  });
+  const box = document.createElement("div");
+  box.classList.add("side-box1");
+
+  const span = document.createElement("span");
+  span.classList.add("bookmate-content");
+  span.textContent = project.title;
+
+  const para = document.createElement("p");
+  para.classList.add("bookmate-para");
+  para.innerHTML = project.desc;
+
+  const button = document.createElement("button");
+  button.classList.add("bookmate-button");
+
+  const a = document.createElement("a");
+  a.href = project.link;
+  a.target = "_blank";
+  a.textContent = "View Project";
+
+  button.appendChild(a);
+  box.appendChild(span);
+  box.appendChild(para);
+  box.appendChild(button);
+
+  if (index % 2 === 0) {
+    section.appendChild(lottieDiv);
+    section.appendChild(box);
+  } else {
+    section.appendChild(box);
+    section.appendChild(lottieDiv);
+  }
+
+  wrapper.appendChild(section);
+});
+
+container.appendChild(wrapper);

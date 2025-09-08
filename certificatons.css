@@ -1,0 +1,361 @@
+:root{
+    --Background: #0D1117;
+    --Primary: #E6EDF3;
+    --Accent: #00C9A7;
+    --Secondary: #FF6EC;
+    --Button: #00f7ff;
+}
+body{
+    background-color:var(--Background);
+    display: flex;
+    flex-direction: column;
+   transition: all 0.5s ease;
+   scroll-behavior: smooth;
+   font-family: "Space Grotesk", sans-serif;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Background);
+  z-index: -1; 
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header-Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--Button);
+    border-radius: 50px 50px 50px 50px;
+    color: var(--Primary);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px var(--Button);
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 50px;
+    cursor: pointer;
+    z-index: 200;
+}
+.Header-Button:hover{
+    width:220px;
+    font-size: 28px;
+}
+.main-header-wrapper{
+    display: none;
+    z-index: 100;
+}
+.main-Header{
+   width:600px;
+   height:50px;
+   /* border:1px solid var(--Button); */
+   backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+   position: fixed;
+   top: 120px;
+   left : 50%;
+   transform: translateX(-50%);
+   box-shadow: 0px 0px 5px var(--Button);
+}
+.Wrapper-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0 0 5px var(--Button);
+}
+.main-Header a{
+    color: var(--Primary);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+}
+.main-Header a:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
+/* .sub-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:180px;
+}
+.head{
+    font-size: 28px;
+    color: white;
+    text-shadow: 0 0 5px var(--Button);
+}
+.skill-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:800px;
+    height: 70px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+    margin-top: 50px;
+    border: 1px solid var(--Button);
+    box-shadow: 0 0 5px var(--Button);
+}
+.skill-box a{
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0  5px var(--Button);
+    text-decoration: none;
+    transform: all 0.5s ease;
+}
+.skill-box a:hover{
+    text-decoration: underline;
+    font-size: 22px;
+    color: white;
+}
+.coding-tools{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: none;
+
+}
+.leetcode,.Codechef,.hackerrank,.GFG{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+   box-shadow: 0 0 5px var(--Button);
+   margin-top: 80px;
+   overflow: hidden;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scaleY(0);   
+  transform-origin: bottom;
+  transition: all 0.4s ease;
+}
+.card-content h3{
+  color: #00f7ff;
+}
+.card-content h3, .card-content p {
+  margin: 5px 0;
+}
+.leetcode:hover .overlay,.Codechef:hover .overlay,.GFG:hover .overlay,.hackerrank:hover .overlay,.HTML:hover .overlay
+,.CSS:hover .overlay,.Javascript:hover .overlay,.BootStrap:hover .overlay,.React:hover .overlay{
+  opacity: 1;
+  transform: scaleY(1);
+}
+.code-btn{
+    width: 150px;
+    height:30px;
+    background-color: transparent;
+    border: 1px solid var(--Button);
+    text-shadow: 0 0 5px var(--Button);
+    color: white;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.code-btn-link{
+    color: white;
+    text-decoration: none;
+}
+.code-btn:hover{
+    font-size: 16px;
+    height: 40px;
+    width: 110px;
+}
+.code-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.Frontend-tools{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.HTML,.CSS,.Javascript,.BootStrap,.React{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+   box-shadow: 0 0 5px var(--Button);
+   margin-top: 80px;
+   overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} */
+  .sub-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:180px;
+}
+.head{
+    font-size: 28px;
+    color: white;
+    text-shadow: 0 0 5px var(--Button);
+}
+.skill-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:800px;
+    height: 70px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+    margin-top: 50px;
+    border: 1px solid var(--Button);
+    box-shadow: 0 0 5px var(--Button);
+}
+.skill-box a{
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0  5px var(--Button);
+    text-decoration: none;
+    transform: all 0.5s ease;
+}
+.skill-box a:hover{
+    text-decoration: underline;
+    font-size: 22px;
+    color: white;
+}
+ .skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px
+}
+
+.skill-card {
+    width: 450px;
+    height: 250px;
+    border-radius: 50px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 5px var(--Button);
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* margin: 30px;
+     */
+}
+.skill-card .overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scaleY(0);   
+  transform-origin: bottom;
+  transition: all 0.4s ease;
+}
+
+.skill-card:hover .overlay {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.code-img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: black; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50px;
+  display: block;
+  background-color: transparent;
+}
+
+.card-content h3 {
+  color: #00f7ff;
+}
+
+.card-content h3, .card-content p {
+  margin: 5px 0;
+}
+
+.code-btn {
+  width: 150px;
+  height:30px;
+  background-color: transparent;
+  border: 1px solid var(--Button);
+  text-shadow: 0 0 5px var(--Button);
+  color: white;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.code-btn-link {
+  color: white;
+  text-decoration: none;
+}
+
+.code-btn:hover {
+  font-size: 16px;
+  height: 40px;
+  width: 110px;
+}
+.skill-box a.active {
+  text-decoration: underline;
+  font-size: 22px;
+  color: white;
+}
