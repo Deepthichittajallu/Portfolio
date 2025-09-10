@@ -79,7 +79,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 15px;
+    gap: 10px;
     text-shadow: 0 0 5px var(--Button);
 }
 .main-Header a{
@@ -211,6 +211,7 @@ body{
   .anime{
     width: 300px;
     height: 300px;
+    margin-top: 50px;
     /* margin-right: 50px; */
   }
   .contact-box-card{
@@ -219,6 +220,10 @@ body{
   }
   .name-input,.email-input,.message-input{
     max-width: 250px;
+  }
+  .main-Header a
+  {
+    font-size: 12px;
   }
 }
 /* <div class="main-header-wrapper">
