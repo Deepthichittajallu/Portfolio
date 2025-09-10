@@ -109,6 +109,7 @@ body{
   gap:40px;
   position: relative;
   margin-top: 80px;
+  flex-wrap: wrap;
 }
 .card-1 {
   position: relative;
@@ -183,9 +184,3 @@ body{
 .card-content h3, .card-content p {
   margin: 5px 0;
 }
-/* .card-3:hover .overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-.card-1, .card-3 { left: 80px; }  
-.card-2 { left: 50%; } */
