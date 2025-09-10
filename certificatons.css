@@ -85,145 +85,7 @@ body{
     font-size: 18px;
     text-decoration: underline;
 }
-/* .sub-heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:180px;
-}
-.head{
-    font-size: 28px;
-    color: white;
-    text-shadow: 0 0 5px var(--Button);
-}
-.skill-head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skill-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width:800px;
-    height: 70px;
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.12);
-   border-radius: 50px 50px 50px 50px;
-    margin-top: 50px;
-    border: 1px solid var(--Button);
-    box-shadow: 0 0 5px var(--Button);
-}
-.skill-box a{
-    color: white;
-    font-size: 20px;
-    text-shadow: 0 0  5px var(--Button);
-    text-decoration: none;
-    transform: all 0.5s ease;
-}
-.skill-box a:hover{
-    text-decoration: underline;
-    font-size: 22px;
-    color: white;
-}
-.coding-tools{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    display: none;
-
-}
-.leetcode,.Codechef,.hackerrank,.GFG{
-    width: 350px;
-    height: 250px;
-    border-radius: 12px;
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.12);
-   border-radius: 50px 50px 50px 50px;
-   box-shadow: 0 0 5px var(--Button);
-   margin-top: 80px;
-   overflow: hidden;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.overlay {
-  position: absolute;
-  inset: 0;
-  border-radius: 50px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: scaleY(0);   
-  transform-origin: bottom;
-  transition: all 0.4s ease;
-}
-.card-content h3{
-  color: #00f7ff;
-}
-.card-content h3, .card-content p {
-  margin: 5px 0;
-}
-.leetcode:hover .overlay,.Codechef:hover .overlay,.GFG:hover .overlay,.hackerrank:hover .overlay,.HTML:hover .overlay
-,.CSS:hover .overlay,.Javascript:hover .overlay,.BootStrap:hover .overlay,.React:hover .overlay{
-  opacity: 1;
-  transform: scaleY(1);
-}
-.code-btn{
-    width: 150px;
-    height:30px;
-    background-color: transparent;
-    border: 1px solid var(--Button);
-    text-shadow: 0 0 5px var(--Button);
-    color: white;
-    border-radius: 12px;
-    margin-top: 10px;
-}
-.code-btn-link{
-    color: white;
-    text-decoration: none;
-}
-.code-btn:hover{
-    font-size: 16px;
-    height: 40px;
-    width: 110px;
-}
-.code-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50px;
-}
-.Frontend-tools{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.HTML,.CSS,.Javascript,.BootStrap,.React{
-    width: 350px;
-    height: 250px;
-    border-radius: 12px;
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.12);
-   border-radius: 50px 50px 50px 50px;
-   box-shadow: 0 0 5px var(--Button);
-   margin-top: 80px;
-   overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-} */
-  .sub-heading{
+.sub-heading{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,9 +136,9 @@ body{
 }
 
 .skill-card {
-    width: 450px;
-    height: 250px;
-    border-radius: 50px;
+    width: 400px;
+    height: 220px;
+    border-radius: 12px;
     backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.12);
@@ -287,13 +149,11 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    /* margin: 30px;
-     */
 }
 .skill-card .overlay {
   position: absolute;
   inset: 0;
-  border-radius: 50px;
+  border-radius: 12px;
   background: rgba(0, 0, 0, 0.6);
   color: white;
   display: flex;
@@ -311,16 +171,11 @@ body{
 }
 
 .code-img {
-  /* width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  background-color: black; */
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  border-radius: 50px;
+  border-radius: 12px;
   display: block;
   background-color: transparent;
 }
