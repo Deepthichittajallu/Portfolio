@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
   const btn = document.querySelector(".Header-Button");
   const hdr = document.querySelector(".main-header-wrapper");
 
@@ -9,108 +9,104 @@ document.addEventListener("DOMContentLoaded", () => {
       hdr.style.display = "none";
     }
   });
-});
-const tools = [
-  {
-    "title":"HTML",
-  }
-]
-const skillsData = {
+
+  const skillsData = {
     coding: [
       {
-        title: 'Leetcode',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/LeetCode_Logo_2.png',
-        description: ['Solved 400+ problems', 'Highest rating of 1461'],
-        link: 'https://leetcode.com/u/Deepthi_Chittajallu/',
-        btnText: 'View Profile'
+        "title": "Leetcode",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/LeetCode_Logo_2.png",
+        "description": ["Solved 400+ problems", "Highest rating of 1461"],
+        "link": "https://leetcode.com/u/Deepthi_Chittajallu/",
+        "btnText": "View Profile"
       },
       {
-        title: 'Codechef',
-        image: 'https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png',
-        description: ['Solved 1100+ problems', 'Highest rating of 1423'],
-        link: 'https://www.codechef.com/users/deepthi2403',
-        btnText: 'View Profile'
+        "title": "Codechef",
+        "image": "https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png",
+        "description": ["Solved 1100+ problems", "Highest rating of 1423"],
+        "link": "https://www.codechef.com/users/deepthi2403",
+        "btnText": "View Profile"
       },
       {
-        title: 'HackerRank',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png',
-        description: ['Achieved 7 Badges', '2+ Certifications'],
-        link: 'https://www.hackerrank.com/profile/chlakshmideepth1',
-        btnText: 'View Profile'
+        "title": "HackerRank",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png",
+        "description": ["Achieved 7 Badges", "2+ Certifications"],
+        "link": "https://www.hackerrank.com/profile/chlakshmideepth1",
+        "btnText": "View Profile"
       },
       {
-        title: 'Geeks for Geeks',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/GeeksForGeeks_logo.png',
-        description: ['Solved 200+ problems', 'Highest rating of 1724'],
-        link: 'https://www.geeksforgeeks.org/user/chlakshmidzjpq/',
-        btnText: 'View Profile'
+        "title": "Geeks for Geeks",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/GeeksForGeeks_logo.png",
+        "description": ["Solved 200+ problems", "Highest rating of 1724"],
+        "link": "https://www.geeksforgeeks.org/user/chlakshmidzjpq/",
+        "btnText": "View Profile"
       }
     ],
     frontend: [
       {
-        title: 'HTML',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s',
-        description: [],
-        link: 'https://www.geeksforgeeks.org/user/chlakshmidzjpq/',
-        btnText: 'View Certificate'
+        "title": "HTML",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s",
+        "description": [],
+        "link": "https://www.geeksforgeeks.org/user/chlakshmidzjpq/",
+        "btnText": "View"
       },
       {
-        title: 'CSS',
-        image: './assets/css.png',
-        description: [],
-        link: 'https://www.geeksforgeeks.org/user/chlakshmidzjpq/',
-        btnText: 'View Certificate'
+        "title": "CSS",
+        "image": "./assets/css.png",
+        "description": [],
+        "link": "https://www.geeksforgeeks.org/user/chlakshmidzjpq/",
+        "btnText": "View"
       },
       {
-        title: 'JavaScript',
-        image: './assets/js.png',
-        description: [],
-        link: 'https://www.geeksforgeeks.org/user/chlakshmidzjpq/',
-        btnText: 'View Certificate'
+        "title": "JavaScript",
+        "image": "./assets/js.png",
+        "description": [],
+        "link": "https://www.geeksforgeeks.org/user/chlakshmidzjpq/",
+        "btnText": "View"
       },
       {
-        title: 'Bootstrap',
-        image: './assets/bootstarp.png',
-        description: [],
-        link: 'https://www.geeksforgeeks.org/user/chlakshmidzjpq/',
-        btnText: 'View Certificate'
+        "title": "Bootstrap",
+        "image": "./assets/bootstarp.png",
+        "description": [],
+        "link": "https://www.geeksforgeeks.org/user/chlakshmidzjpq/",
+        "btnText": "View"
       },
       {
-        title: 'React',
-        image: './assets/react.png',
-        description: [],
-        link: 'https://www.geeksforgeeks.org/user/chlakshmidzjpq/',
-        btnText: 'View Certificate'
+        "title": "React",
+        "image": "./assets/react.png",
+        "description": [],
+        "link": "https://www.geeksforgeeks.org/user/chlakshmidzjpq/",
+        "btnText": "View"
       }
     ],
     database: [
       {
-        title: 'MySQL',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/640px-Sql_data_base_with_logo.png',
-        description: ['Experienced in joins, indexing, stored procedures'],
-        link: '#',
-        btnText: 'View Certificate'
+        "title": "MySQL",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/640px-Sql_data_base_with_logo.png",
+        "description": ["Experienced in joins, indexing, stored procedures"],
+        "link": "#",
+        "btnText": "View"
       }
     ],
     tools: [
       {
-        title: 'Git & GitHub',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TLkHZgGiaukgrwZo0niTUPvNRxganER5AA&s',
-        description: ['Version control', 'Collaboration workflows'],
-        link: 'https://github.com/Deepthichittajallu',
-        btnText: 'View Profile'
+        "title": "Git & GitHub",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TLkHZgGiaukgrwZo0niTUPvNRxganER5AA&s",
+        "description": ["Version control", "Collaboration workflows"],
+        "link": "https://github.com/Deepthichittajallu",
+        "btnText": "View Profile"
       },
       {
-        title: 'Linux & Redhat',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVm-8cHPLKhsqrjwWSAkhVsImyiXlf08_TEg&s',
-        description: ['Linux', 'Explored different OS'],
-        link: '#',
-        btnText: 'View Certificate'
+        "title": "Linux & Redhat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVm-8cHPLKhsqrjwWSAkhVsImyiXlf08_TEg&s",
+        "description": ["Linux", "Explored different OS"],
+        "link": "./assets/Redhat.pdf",
+        "btnText": "View"
       }
     ]
   };
+
   function renderSkills(category) {
-      const contentContainer = document.getElementById('skills-content');
+    const contentContainer = document.getElementById('skills-content');
     contentContainer.innerHTML = '';
     const skillCards = skillsData[category];
     if (!skillCards || skillCards.length === 0) {
@@ -118,9 +114,14 @@ const skillsData = {
       return;
     }
 
-    skillCards.forEach(skill => {
+    skillCards.forEach((skill, index) => {
       const card = document.createElement('div');
       card.className = 'skill-card';
+      if (index % 2 === 0) {
+        card.setAttribute('data-aos', 'fade-up');
+      } else {
+        card.setAttribute('data-aos', 'fade-down');
+      }
 
       card.innerHTML = `
         <img src="${skill.image}" class="code-img"/>
@@ -134,32 +135,21 @@ const skillsData = {
           </div>
         </div>
       `;
-
       contentContainer.appendChild(card);
     });
+    AOS.refresh();
   }
-document.addEventListener('DOMContentLoaded', () => {
-  renderSkills('coding');
-  document.querySelectorAll('.skill-box a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const selected = this.getAttribute('data-skill');
-      renderSkills(selected);
-      document.querySelectorAll('.skill-box a').forEach(el => el.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderSkills('coding');
-  document.querySelectorAll('.skill-box a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelectorAll('.skill-box a').forEach(el => el.classList.remove('active'));
-      this.classList.add('active');
-      const selected = this.getAttribute('data-skill');
-      renderSkills(selected);
+  document.addEventListener('DOMContentLoaded', () => {
+    renderSkills('coding');
+
+    document.querySelectorAll('.skill-box a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.skill-box a').forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+        const selected = this.getAttribute('data-skill');
+        renderSkills(selected);
+      });
     });
   });
-});

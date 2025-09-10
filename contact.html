@@ -9,14 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
     <div id="particles-js"></div>
        <div class="Header">
-        <div class="Header-Button">
+        <div class="hw">
+          <div class="Header-Button">
             Deepthi
+        </div>
         </div>
         <div class="main-header-wrapper">
             <div class="main-Header">
@@ -34,7 +36,7 @@
         <p class="contact-para">Have questions or ideas? Let’s chat!</p> -->
         </div>
     <div class="contact-body">
-            <div class="anime-wrapper">
+            <div class="anime-wrapper" data-aos="fade-right">
         <div class="anime"></div>
         <div class="anime-text">
             <h2>Let’s Connect!</h2>
@@ -42,7 +44,7 @@
             Let's Create something Crazy.</p>
         </div>
             </div>
-        <div class="contact-box">
+        <div class="contact-box" data-aos="fade-left">
             <div class="contact-box-card">
                 <div class="box-heading">Contact Me</div>
                 <div class="name"><p>Name : </p>
@@ -59,6 +61,12 @@
             </div>
         </div>
     </div>
+    <footer class="footer-simple">
+        <div class="footer-content">
+          <p>© All rights reserved</p>
+          <p>Made with ❤️ by Deepthi Chittajallu</p>
+        </div>
+    </footer>
     <script src="particles.min.js"></script>
     <script src="contact.js"></script>
     <script>
@@ -105,5 +113,9 @@ function clearForm() {
     alert("Your message has been submitted!"); 
 }
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>

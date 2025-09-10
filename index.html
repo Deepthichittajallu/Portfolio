@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>About</title>
 </head>
 <body>
@@ -17,15 +17,6 @@
     <div class="Header">
         <div class="Header-Button">
             Deepthi
-        </div>
-        <div class="home" onclick="Deepu()">&#x2302;</div>
-        <div class="mobile-options" onclick="Deepthi()">
-            <span>&times;</span>
-            <div>Home</div>
-            <div>Projects</div>
-            <div>Internships</div>
-            <div>Skills</div>
-            <div>Contact</div>
         </div>
         <div class="main-header-wrapper">
             <div class="main-Header">
@@ -41,10 +32,10 @@
         
     </div>
     <div class="Main-body">
-        <div class="photo">
+        <div class="photo" data-aos="fade-right">
             <div class="Profphoto"></div>
         </div>
-        <div class="side-content">
+        <div class="side-content" data-aos="fade-left">
           <div class="side-box">
           <div class="content-1">
                 <p>Hey, Hope you are doing Great<br/>
@@ -70,6 +61,12 @@
     </div>
     <div class = "Projects" id="Proj">
     </div>
+    <footer class="footer-simple" data-aos="fade-up">
+        <div class="footer-content">
+          <p>© All rights reserved</p>
+          <p>Made with ❤️ by Deepthi Chittajallu</p>
+        </div>
+    </footer>
     <script src="particles.min.js"></script>
     <script>
   particlesJS("particles-js", {
@@ -123,6 +120,10 @@
     path: './Dogwalking.json' // path to your Lottie JSON file
   });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="Home.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

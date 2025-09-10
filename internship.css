@@ -54,9 +54,8 @@ body{
     z-index: 100;
 }
 .main-Header{
-   width:600px;
+   /* width:600px;
    height:50px;
-   /* border:1px solid var(--Button); */
    backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.12);
@@ -64,6 +63,19 @@ body{
    position: fixed;
    top: 120px;
    left : 50%;
+   transform: translateX(-50%);
+   box-shadow: 0px 0px 5px var(--Button); */
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+   padding: 12px 50px;
+   backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+   border-radius: 50px 50px 50px 50px;
+   position: fixed;
+   top: 120px;
    transform: translateX(-50%);
    box-shadow: 0px 0px 5px var(--Button);
 }
@@ -74,6 +86,8 @@ body{
     align-items: center;
     justify-content: space-around;
     text-shadow: 0 0 5px var(--Button);
+    font-size: 24px;
+    gap: 20px;
 }
 .main-Header a{
     color: var(--Primary);
@@ -184,3 +198,56 @@ body{
 .card-content h3, .card-content p {
   margin: 5px 0;
 }
+@media screen and (max-width:575px) {
+  .main-Header a
+  {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:450px) {
+    .main-Header a{
+        font-size: 12px;
+    }
+    .Wrapper-header
+    {
+        gap: 10px;
+    }
+    .Header-Button{
+        margin-left: 0px;
+
+    }
+
+}
+@media screen and (max-width:340px)
+{
+  .Header-Button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .main-Header{
+   padding: 10px 20px;
+  }
+  .Wrapper-header a{
+    font-size: 12px;
+  }
+}
+.footer-simple {
+  backdrop-filter: blur(0px) saturate(200%);
+-webkit-backdrop-filter: blur(5px) saturate(200%);
+ background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+  text-shadow: 0 0 5px var(--Button);
+  margin-top: 20px;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 

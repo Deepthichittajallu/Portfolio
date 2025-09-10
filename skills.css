@@ -54,16 +54,17 @@ body{
     z-index: 100;
 }
 .main-Header{
-   width:600px;
-   height:50px;
-   /* border:1px solid var(--Button); */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+   padding: 12px 50px;
    backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.12);
    border-radius: 50px 50px 50px 50px;
    position: fixed;
    top: 120px;
-   left : 50%;
    transform: translateX(-50%);
    box-shadow: 0px 0px 5px var(--Button);
 }
@@ -73,7 +74,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
     text-shadow: 0 0 5px var(--Button);
+    font-size: 24px;
 }
 .main-Header a{
     color: var(--Primary);
@@ -85,7 +88,7 @@ body{
     font-size: 18px;
     text-decoration: underline;
 }
-/* .sub-heading{
+.sub-heading{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +105,7 @@ body{
     justify-content: center;
 }
 .skill-box{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-around;
     width:800px;
@@ -113,138 +116,13 @@ body{
    border-radius: 50px 50px 50px 50px;
     margin-top: 50px;
     border: 1px solid var(--Button);
-    box-shadow: 0 0 5px var(--Button);
-}
-.skill-box a{
-    color: white;
-    font-size: 20px;
-    text-shadow: 0 0  5px var(--Button);
-    text-decoration: none;
-    transform: all 0.5s ease;
-}
-.skill-box a:hover{
-    text-decoration: underline;
-    font-size: 22px;
-    color: white;
-}
-.coding-tools{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    display: none;
-
-}
-.leetcode,.Codechef,.hackerrank,.GFG{
-    width: 350px;
-    height: 250px;
-    border-radius: 12px;
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.12);
-   border-radius: 50px 50px 50px 50px;
-   box-shadow: 0 0 5px var(--Button);
-   margin-top: 80px;
-   overflow: hidden;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.overlay {
-  position: absolute;
-  inset: 0;
-  border-radius: 50px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: scaleY(0);   
-  transform-origin: bottom;
-  transition: all 0.4s ease;
-}
-.card-content h3{
-  color: #00f7ff;
-}
-.card-content h3, .card-content p {
-  margin: 5px 0;
-}
-.leetcode:hover .overlay,.Codechef:hover .overlay,.GFG:hover .overlay,.hackerrank:hover .overlay,.HTML:hover .overlay
-,.CSS:hover .overlay,.Javascript:hover .overlay,.BootStrap:hover .overlay,.React:hover .overlay{
-  opacity: 1;
-  transform: scaleY(1);
-}
-.code-btn{
-    width: 150px;
-    height:30px;
-    background-color: transparent;
-    border: 1px solid var(--Button);
-    text-shadow: 0 0 5px var(--Button);
-    color: white;
-    border-radius: 12px;
-    margin-top: 10px;
-}
-.code-btn-link{
-    color: white;
-    text-decoration: none;
-}
-.code-btn:hover{
-    font-size: 16px;
-    height: 40px;
-    width: 110px;
-}
-.code-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50px;
-}
-.Frontend-tools{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.HTML,.CSS,.Javascript,.BootStrap,.React{
-    width: 350px;
-    height: 250px;
-    border-radius: 12px;
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.12);
-   border-radius: 50px 50px 50px 50px;
-   box-shadow: 0 0 5px var(--Button);
-   margin-top: 80px;
-   overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-} */
-  .sub-heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:180px;
-}
-.head{
-    font-size: 28px;
-    color: white;
-    text-shadow: 0 0 5px var(--Button);
-}
-.skill-head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skill-box{
+    box-shadow: 0 0 5px var(--Button); */
     display: flex;
     align-items: center;
     justify-content: space-around;
     width:800px;
-    height: 70px;
+    height: 50px;
+    gap: 10px;
     backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.12);
@@ -354,3 +232,63 @@ body{
   font-size: 22px;
   color: white;
 }
+@media screen and (max-width:575px) {
+  .main-Header a
+  {
+    font-size: 12px;
+  }
+  .skill-box a{
+    font-size: 15px;
+  }
+  .skill-box a.active{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:450px) {
+    .main-Header a{
+        font-size: 12px;
+    }
+    .Wrapper-header
+    {
+        gap: 10px;
+    }
+    .Header-Button{
+        margin-left: 0px;
+
+    }
+
+}
+@media screen and (max-width:340px)
+{
+  .Header-Button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .main-Header{
+   padding: 10px 20px;
+  }
+  .Wrapper-header a{
+    font-size: 12px;
+  }
+}
+.footer-simple {
+  backdrop-filter: blur(0px) saturate(200%);
+-webkit-backdrop-filter: blur(5px) saturate(200%);
+ background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+  /* box-shadow: 0 0 5px var(--Button); */
+  text-shadow: 0 0 5px var(--Button);
+  margin-top: 20px;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 
