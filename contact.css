@@ -105,11 +105,11 @@ body{
 }
 
 .anime {
-    margin-top: 80px;
+    /* margin-top: 80px;
     height: 400px; 
     width: 400px;
     position: relative;
-    left: 0;
+    left: 0; */
 }
 
 .contact-box-card {
@@ -203,8 +203,23 @@ body{
     .Wrapper-header{
         
     }
-
-    
+    .contact-box-card{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width:575px) {
+  .anime{
+    width: 300px;
+    height: 300px;
+    /* margin-right: 50px; */
+  }
+  .contact-box-card{
+    max-width: 300px;
+    margin-right: 50px;
+  }
+  .name-input,.email-input,.message-input{
+    max-width: 250px;
+  }
 }
 /* <div class="main-header-wrapper">
             <div class="main-Header">
