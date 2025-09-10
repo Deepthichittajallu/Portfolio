@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+    display: flex;
+}
+.mobile-options{
+    position:absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    left:-250px;
+    height:100svh;
+    width: 200px;
+    background-color: grey;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: left 0.5s ease-in;
+}
+.mobile-options div{
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+.mobile-options div:hover{
+    background-color: black;
+    opacity: 0.3;
+    font-size: 28px;
+}
+.home:hover{
+    font-size: 50px;
+}
+span{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    width: fit-content;
+}
+.home{
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+.circle{
+            position: absolute;
+            width:30px;
+            height: 30px;
+            border-radius: 50px;
+            color: black;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .pointer{
+            width: 4px;
+            height: 4px;
+            border-radius: 50px;
+            background-color: white;
+            filter: blur;
+        }

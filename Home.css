@@ -25,11 +25,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 .Header-Button{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     width: 200px;
     height: 50px;
     border: 1px solid var(--Button);
@@ -170,6 +172,8 @@ body{
 .side-content{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
 }
 .icons{
     display: flex;
@@ -208,6 +212,11 @@ body{
 }
 .Projects{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .Projects h1{
     text-align: center;
@@ -232,6 +241,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     width:450px;
     height: 300px;
     backdrop-filter: blur(0px) saturate(200%);
@@ -279,47 +289,117 @@ body{
     width:110px;
     font-size: 14px;
 }
+.mobile-options{
+    display: none;;
+    position:absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    left:-250px;
+    height:100%;
+    width: 200px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: left 0.5s ease-in;
+}
+.mobile-options div{
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+.mobile-options div:hover{
+    background-color: black;
+    opacity: 0.3;
+    font-size: 28px;
+}
+.home{
+    display: none;
+}
+.home:hover{
+    font-size: 50px;
+}
+span{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    width: fit-content;
+}
+.home{
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+@media (min-width: 320px) and (max-width:480px){
+    .home{
+        display: block;
+    }
+    .mobile-options{
+        display: block;
+    }
+    .photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 30px;
+    }
+    .Profphoto{
+        right: 0;
+    }
+    .side-content{
+        
+        margin-left: 200px;
+        padding-left: 0px;
+    }
+    .side-box{
+        padding-left: 0px;
+    }
+    .Lottie-anime{
+        height: 300px;
+        width: 300px;
+        padding-left: 50px;
+    }
+    .side-box1{
+        width: 350px;
+        height: 220px;
+        margin-top: 50px;
+        margin-left: 50px;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .bookmate-content{
+        font-size: 22px;
+    }
+    .bookmate-para{
+        font-size: 12px;
+    }
+    .Projects{
+        margin-top: 30px;
+    }
+}
+@media (min-width: 481px) and (max-width:600px){
 
-/* .Project-section {
- display: flex;
- align-items: center;
- justify-content: space-around;
- flex-wrap: wrap; */
-  /* gap: 20px;
-  width: 90%;
-  max-width: 1200px;
-  padding: 20px; */
-/* } */
-/* .card1 {
-  background: #161b22;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
-.card1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+@media (min-width: 601px) and (max-width : 768px){
 }
-.animation {
-  width: 100%;
-  height: 200px; 
-  margin-bottom: 15px;
-}
-.Title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #00c9a7;
+@media (min-width: 769px) and (max-width:900px){
 }
 
-.Link a {
-  color: #00f7ff;
-  text-decoration: none;
-  font-size: 14px;
+@media (min-width: 901px) and (max-width:1200px){
 }
-.Link a:hover {
-  text-decoration: underline;
-} */
+@media (min-width: 1201px){
+}
+
+
+;

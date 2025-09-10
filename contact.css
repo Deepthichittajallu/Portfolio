@@ -32,8 +32,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* width: 200px;
+    height: 50px; */
     border: 1px solid var(--Button);
     border-radius: 50px 50px 50px 50px;
     color: var(--Primary);
@@ -47,7 +51,7 @@ body{
     z-index: 200;
 }
 .Header-Button:hover{
-    width:220px;
+    /* margin: 15px; */
     font-size: 28px;
 }
 .main-header-wrapper{
@@ -55,9 +59,10 @@ body{
     z-index: 100;
 }
 .main-Header{
-   width:600px;
-   height:50px;
-   /* border:1px solid var(--Button); */
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.12);
@@ -74,6 +79,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 15px;
     text-shadow: 0 0 5px var(--Button);
 }
 .main-Header a{
@@ -86,60 +92,11 @@ body{
     font-size: 18px;
     text-decoration: underline;
 }
-/* .Contact-Header
-{
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    flex-direction: column;
-}
-.contact
-{
-    margin-top: 170px;
-    color: white;
-    font-size: 30px;
-    text-shadow: 0 0 5px var(--Button);
-}
-.contact-para{
-    color: white;
-    font-size: 20px;
-    text-shadow: 0 0 5px var(--Button);
-} */
-/* .contact-body{
-    display: flex;
-    align-items: center;
-    justify-content: space space-around;
-}
-.anime{
-    position: relative;
-    margin-top: 80px;
-    left: 140px;
-    height: 600px;
-    width: 600px;
-}
-.contact-box-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 500px;
-    height: 500px;
-    border-radius: 12px;
-    position: relative;
-    left: 300px;
-    margin-top: 150px;
-    border: 1px solid var(--Button);
-    backdrop-filter: blur(6px) saturate(143%);
-    -webkit-backdrop-filter: blur(6px) saturate(143%);
-    background-color: rgba(255, 255, 255, 0.13);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
-} */
  .contact-body {
     display: flex;
     justify-content: space-around; /* valid */
     align-items: flex-start;
-    flex-wrap: wrap; /* stacks on smaller screens */
+    flex-wrap: wrap; 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -149,9 +106,9 @@ body{
 
 .anime {
     margin-top: 80px;
-    height: 400px;   /* smaller for responsiveness */
+    height: 400px; 
     width: 400px;
-    position: relative; /* remove left offset */
+    position: relative;
     left: 0;
 }
 
@@ -162,7 +119,7 @@ body{
     flex-direction: column;
     width: 100%;
     max-width: 500px;
-    height: auto;     /* allow to grow naturally */
+    height: auto;   
     margin-top: 150px;
     padding: 20px;
     border: 1px solid var(--Button);
@@ -186,16 +143,6 @@ body{
     margin-left: 20px;
     text-shadow: 0 0 5px var(--Button);
 }
-/* .name-input,.email-input{
-    color: white;
-    width: 450px;
-    height: 30px;
-    backdrop-filter: blur(6px) saturate(143%);
-    -webkit-backdrop-filter: blur(6px) saturate(143%);
-    background-color: rgba(255, 255, 255, 0.13);
-    border-radius: 12px;
-    box-shadow: 0 0 5px var(--Button);
-} */
  .name-input, .email-input, .message-input {
     font-family: "Space Grotesk", sans-serif;
     color: white;
@@ -211,19 +158,9 @@ body{
     box-shadow: 0 0 5px var(--Button);
     font-size: 16px;
 }
-/* .message-input{
-    color: white;
-    width: 450px;
-    height: 120px;
-    backdrop-filter: blur(6px) saturate(143%);
-    -webkit-backdrop-filter: blur(6px) saturate(143%);
-    background-color: rgba(255, 255, 255, 0.13);
-    border-radius: 12px;
-    box-shadow: 0 0 5px var(--Button);
-} */
  .message-input {
     height: 100px;
-    resize: none; /* prevent resizing */
+    resize: none;
 }
 .sub-btn{
     font-family: "Space Grotesk", sans-serif;
@@ -260,7 +197,23 @@ body{
     color: #ddd;
     font-size: 18px;
     line-height: 1.6;
-    /* margin-top: 10px; */
     max-width: 400px;
 }
+@media screen and (min-width : 576px) and (max-width:767px) {
+    .Wrapper-header{
+        
+    }
 
+    
+}
+/* <div class="main-header-wrapper">
+            <div class="main-Header">
+            <div class="Wrapper-header">
+                <a href="Home.html">Projects</a>
+                <a href="internship.html">Internships</a>
+                <a href="skills.html">Skills</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        </div> */

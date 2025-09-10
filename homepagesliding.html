@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="homepagesliding.css"/>
+    </head>
+    <body>
+        <div class="home" onclick="Deepu()">&#x2302;</div>
+        <div class="mobile-options" onclick="Deepthi()">
+            <span>&times;</span>
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Login</div>
+        </div>
+         <div class="circle">
+        <div class="pointer"></div>
+    </div>
+    </body>
+    <script>
+        function Deepthi()
+        {
+            console.log("HAi")
+            document.getElementsByClassName("mobile-options")[0].style="left:-250px;"
+        }
+        function Deepu(){
+            document.getElementsByClassName("mobile-options")[0].style="left:0px;"
+        }
+        const circle = document.querySelector(".circle");
+
+        document.addEventListener("mousemove", (e) => {
+            const offsetX = circle.offsetWidth / 2;
+            const offsetY = circle.offsetHeight / 2;
+
+            circle.style.left = `${e.clientX - offsetX}px`;
+            circle.style.top = `${e.clientY - offsetY}px`;
+        });
+    </script>
+</html>

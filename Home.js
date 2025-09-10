@@ -123,3 +123,11 @@ projects.forEach((project, index) => {
 });
 
 container.appendChild(wrapper);
+function Deepthi()
+        {
+            console.log("HAi")
+            document.getElementsByClassName("mobile-options")[0].style="right:-250px;"
+        }
+        function Deepu(){
+            document.getElementsByClassName("mobile-options")[0].style="right:0px;"
+        }
