@@ -1,0 +1,10 @@
+/* Cleared old styles. Global styles are now in index.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}

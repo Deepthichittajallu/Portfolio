@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+  /* Original Theme Palette */
+  --bg-dark: #0D1117;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-main: #E6EDF3;
+  --text-muted: #8b949e;
+  
+  /* Original Accent */
+  --accent-cyan: #00f7ff;
+  --accent-cyan-glow: rgba(0, 247, 255, 0.4);
+  
+  /* Removed the purple gradient, using solid cyan or cyan-to-transparent instead */
+  --gradient-primary: linear-gradient(135deg, #00f7ff 0%, rgba(0, 247, 255, 0.5) 100%);
+  
+  /* Effects */
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-border-hover: 1px solid rgba(0, 247, 255, 0.3);
+  --shadow-glow: 0 0 15px rgba(0, 247, 255, 0.15);
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.glass-panel:hover {
+  border: var(--glass-border-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+/* Typography Utilities */
+.text-gradient {
+  /* Using a simple cyan color to avoid the previous gradient look if preferred, but leaving gradient class name */
+  color: var(--accent-cyan);
+  text-shadow: 0 0 8px rgba(0, 247, 255, 0.3);
+}
+
+/* Button Utilities */
+.btn-primary {
+  padding: 12px 28px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid var(--accent-cyan);
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.1);
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(0, 247, 255, 0.1);
+  transition: var(--transition-smooth);
+  z-index: -1;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px var(--accent-cyan-glow);
+  border-color: var(--accent-cyan);
+}
+
+.btn-primary:hover::before {
+  width: 100%;
+}
+
+/* Layout Utilities */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+}
+
+/* Particle Background Container */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Scale typography */
+  h1 {
+    font-size: 3rem !important;
+  }
+  .section-title {
+    font-size: 2.2rem !important;
+  }
+
+  /* Compact header */
+  .header-nav {
+    gap: 15px !important;
+    padding: 8px 15px !important;
+  }
+  
+  .header-nav a {
+    font-size: 13px !important;
+  }
+
+  /* Compact sections */
+  .section-container {
+    padding: 60px 20px !important;
+  }
+
+  /* Make sure flex rows stack properly in Hero */
+  div[data-aos="fade-right"], div[data-aos="fade-left"] {
+    text-align: center;
+    flex-basis: 100% !important;
+  }
+
+  /* Ensure buttons are centered in hero */
+  .btn-primary {
+    margin: 0 auto;
+  }
+
+  /* Make grid layouts strictly 1-column on very small mobile if necessary */
+  @media (max-width: 480px) {
+    .glass-panel {
+      padding: 20px !important;
+    }
+  }
+}

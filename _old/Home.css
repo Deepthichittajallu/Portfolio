@@ -1,0 +1,1044 @@
+/* 
+:root {
+    --Background: #0D1117;
+    --Primary: #E6EDF3;
+    --Accent: #00C9A7;
+    --Secondary: #FF6EC;
+    --Button: #00f7ff;
+}
+
+body {
+    background-color: var(--Background);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Background);
+    z-index: -1;
+}
+
+.Header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    z-index: 200;
+}
+
+.Header-Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--Button);
+    border-radius: 50px;
+    color: var(--Primary);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px var(--Button);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.Header-Button:hover {
+    width: 220px;
+    font-size: 28px;
+}
+
+.main-header-wrapper {
+    display: none;
+    z-index: 100;
+}
+
+.main-Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 50px;
+    backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px var(--Button);
+    z-index: 150;
+    margin-top: 20px;
+
+.Wrapper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0 0 5px var(--Button);
+    font-size: 24px;
+    gap: 20px;
+}
+
+.main-Header a {
+    color: var(--Primary);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+}
+
+.main-Header a:hover {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.Main-body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.photo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Profphoto {
+    width: 450px;
+    height: 600px;
+    background-image: url("./assets/Professionalphoto1.png");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.side-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.side-box {
+    width: 450px;
+    height: auto;
+    backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.side-box p {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: left;
+    padding-left: 0;
+}
+
+.content-1 {
+    padding-top: 0;
+    line-height: 2rem;
+}
+
+.text {
+    display: flex;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+}
+
+.typed {
+    display: inline-block;
+    animation: typing 4s steps(23) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30px;
+    color: white;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: white;
+    margin-left: 5px;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 30ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.para {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+.icon i {
+    text-decoration: none;
+    color: var(--Button);
+    font-size: 30px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 3px var(--Button);
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.resume button {
+    width: 120px;
+    height: 40px;
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid var(--Button);
+    box-shadow: 0px 0px 5px var(--Button);
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.resume button:hover {
+    transform: translate(10px, -10px);
+}
+
+.Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.Projects h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    font-family: "Space Grotesk", sans-serif;
+    text-shadow: 0 0 5px var(--Button);
+}
+
+.Project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.Lottie-anime {
+    width: 500px;
+    height: 500px;
+}
+
+.side-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 450px;
+    height: auto;
+    backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+    padding: 20px;
+}
+
+.bookmate-content {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 0px 4px var(--Button);
+}
+
+.bookmate-para {
+    font-size: 16px;
+    padding: 0 10px;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.bookmate-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    text-shadow: 0px 0px 4px var(--Button);
+    background-color: transparent;
+    border: 1px solid var(--Button);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.bookmate-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.bookmate-button:hover {
+    width: 110px;
+    font-size: 14px;
+}
+.mobile-options,
+.home {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .Main-body {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 140px;
+    }
+
+    .Profphoto {
+        width: 380px;
+        height: 480px;
+    }
+
+    .side-content {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Profphoto {
+        width: 320px;
+        height: 420px;
+    }
+
+    .side-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .side-content {
+        max-width: 400px;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .Projects h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Profphoto {
+        width: 260px;
+        height: 340px;
+    }
+
+    .side-box {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .typed {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .Header {
+        padding-top: 20px;
+    }
+
+    .main-Header {
+        display: none; 
+    }
+
+    .mobile-options,
+    .home {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 999;
+    }
+
+    .mobile-options {
+        flex-direction: column;
+        left: -250px;
+        height: 100%;
+        width: 200px;
+        backdrop-filter: blur(5px) saturate(200%);
+        background-color: rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        border: 1px solid var(--Button);
+        padding: 10px;
+        font-size: 22px;
+        color: white;
+        transition: left 0.5s ease-in;
+    }
+
+    .mobile-options.active {
+        left: 0;
+    }
+
+    .mobile-options div {
+        margin-bottom: 10px;
+        border-bottom: 2px solid black;
+        width: 100%;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .mobile-options div:hover {
+        background-color: black;
+        opacity: 0.3;
+        font-size: 28px;
+    }
+    
+    .home {
+        color: white;
+        font-size: 45px;
+        cursor: pointer;
+        
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .Profphoto {
+        width: 180px;
+        height: 220px;
+    }
+
+    .side-box {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main-Header {
+        width: 90%;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .Wrapper-header {
+        gap: 10px;
+    }
+} */
+:root {
+    --Background: #0D1117;
+    --Primary: #E6EDF3;
+    --Accent: #00C9A7;
+    --Secondary: #FF6EC;
+    --Button: #00f7ff;
+}
+
+body {
+    background-color: var(--Background);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Background);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* --- Header Section (Desktop View) --- */
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header-Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 200px;
+    height: 50px; */
+    /* padding: 20px; */
+    padding: 10px 20px;
+    border: 1px solid var(--Button);
+    border-radius: 50px;
+    color: var(--Primary);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px var(--Button);
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 50px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.Header-Button:hover {
+    padding: 12px 22px;
+    font-size: 28px;
+}
+
+.main-header-wrapper {
+    display: none;
+    z-index: 100;
+}
+
+.main-Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 50px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 5px var(--Button);
+    z-index: 150;
+}
+
+.Wrapper-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0 0 5px var(--Button);
+    font-size: 24px;
+    gap: 20px;
+}
+
+.main-Header a {
+    color: var(--Primary);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+}
+
+.main-Header a:hover {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* --- Main Content Section (Desktop View) --- */
+.Main-body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.photo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    will-change: transform, opacity;
+}
+
+.Profphoto {
+    width: 450px;
+    height: 600px;
+    background-image: url("./assets/Professionalphoto1.png");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 12px;
+    will-change: transform, opacity;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -100px;
+}
+
+.side-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    will-change: transform, opacity;
+}
+
+.side-box {
+    width: 450px;
+    height: auto;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+    padding: 20px;
+    margin-top: 0;
+    box-sizing: border-box;
+    will-change: transform, opacity;
+}
+
+.side-box p {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: left;
+    padding-left: 0;
+}
+
+.content-1 {
+    padding-top: 0;
+    line-height: 2rem;
+}
+
+.text {
+    display: flex;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+}
+
+.typed {
+    display: inline-block;
+    animation: typing 4s steps(23) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30px;
+    color: white;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: white;
+    margin-left: 5px;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 30ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.para {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+.icon i {
+    text-decoration: none;
+    color: var(--Button);
+    font-size: 30px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 3px var(--Button);
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.resume button {
+    width: 120px;
+    height: 40px;
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid var(--Button);
+    box-shadow: 0px 0px 5px var(--Button);
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.resume button:hover {
+    transform: translate(10px, -10px);
+}
+
+/* --- Project Section (Desktop View) --- */
+.Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.Projects h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    font-family: "Space Grotesk", sans-serif;
+    text-shadow: 0 0 5px var(--Button);
+}
+
+.Project-section {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.Lottie-anime {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.side-box1 {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: auto;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+    padding: 20px;
+    box-sizing: border-box; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:450px;
+    height: 300px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    border: 1px solid var(--Button);
+}
+
+.bookmate-content {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 0px 4px var(--Button);
+}
+
+.bookmate-para {
+    font-size: 16px;
+    padding: 0 10px;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.bookmate-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    text-shadow: 0px 0px 4px var(--Button);
+    background-color: transparent;
+    border: 1px solid var(--Button);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.bookmate-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.bookmate-button:hover {
+    width: 110px;
+    font-size: 14px;
+}
+
+/* --- Mobile Menu & Misc --- */
+.mobile-options,
+.home {
+    display: none;
+}
+
+/* --- Responsive Media Queries (for sizes below 1024px) --- */
+@media screen and (max-width: 1024px) {
+    /* Main body changes to column layout */
+    .Main-body {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .photo {
+        margin-top: 80px;
+    }
+
+    .Profphoto {
+        width: 380px;
+        height: 480px;
+    }
+
+    .side-content {
+        max-width: 450px;
+    }
+
+    .side-box {
+        margin-top: 0;
+    }
+    
+    .Project-item {
+        max-width: 400px;
+    }
+    .side-box1{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Profphoto {
+        width: 320px;
+        height: 420px;
+        margin-top: 80px;
+    }
+
+    .side-box {
+        max-width: 400px;
+    }
+
+    .side-content {
+        max-width: 400px;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .Projects h1 {
+        font-size: 30px;
+    }
+
+    .Project-item {
+        max-width: 350px;
+    }
+    .side-box1{
+        width: 400px;
+    }
+    .Wrapper-header a{
+        font-size: 14px;
+    }
+    .main-Header{
+        padding: 12px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+     .Profphoto {
+        width: 260px;
+        height: 340px;
+        margin-top: 80px;
+    }
+
+    .side-box {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .typed {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .Header {
+        padding-top: 20px;
+    }
+
+    .Projects {
+        padding: 0 10px;
+    }
+
+    .Project-item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .Profphoto {
+        width: 180px;
+        height: 220px;
+        margin-top: 80px;
+    }
+
+    .side-box {
+        width: 95%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .content-1 p {
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+
+    .typed {
+        font-size: 16px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    /* .main-Header {
+        /* width: 90%; 
+        padding: 8px 15px;
+        font-size: 12px;
+    } */
+
+    .Wrapper-header {
+        gap: 10px;
+    }
+    .side-box1 p{
+        font-size: 14px;
+    }
+    .Wrapper-header a{
+        font-size: 8px;
+    }
+    .main-Header{
+        padding: 12px 20px;
+    }
+    .Header-Button{
+       padding: 5px 10px;
+    }
+    
+}
+
+.footer-simple {
+  backdrop-filter: blur(0px) saturate(200%);
+-webkit-backdrop-filter: blur(5px) saturate(200%);
+ background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+  box-shadow: 0 0 5px var(--Button);
+  text-shadow: 0 0 5px var(--Button);
+  width: 100%;
+}
+
+.footer-simple p {
+  margin: 5px 0;
+} 
