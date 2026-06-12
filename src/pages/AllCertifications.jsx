@@ -9,18 +9,18 @@ const AllCertifications = () => {
   }, []);
 
   const globalCertifications = [
-    { title: 'Oracle Database Foundations', image: '/assets/oracle.png', description: ['Issued by Oracle Academy', 'Completed in 2025'], link: '/assets/oracle.pdf', btnText: 'View Certificate' },
-    { title: 'Java Foundations', image: '/assets/javas.png', description: ['Issued by Oracle Academy', 'Completed in 2025'], link: '/assets/23A91A0585.pdf', btnText: 'View Certificate' },
-    { title: 'Redhat', image: '/assets/redhat(ss).png', description: ['Issued by Oracle Academy', 'Completed in 2025'], link: '/assets/Redhat.pdf', btnText: 'View Certificate' },
-    { title: 'MongoDB', image: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg', description: ['Issued by MongoDB University', 'Completed in 2025'], link: '/assets/Mongodb.pdf', btnText: 'View Certificate' }
+    { title: 'Oracle Database Foundations', image: 'assets/Certifications/global_Certifications/Oracle_database(ss).png', description: ['Issued by Oracle Academy', 'Completed in 2025'], link: 'assets/Certifications/global_Certifications/Oracle_database.pdf', btnText: 'View Certificate' },
+    { title: 'Java Foundations', image: 'assets/Certifications/global_Certifications/Java_Oracle.png', description: ['Issued by Oracle Academy', 'Completed in 2025'], link: 'assets/Certifications/global_Certifications/Java_Oracle.pdf', btnText: 'View Certificate' },
+    { title: 'Redhat', image: 'assets/Certifications/global_Certifications/redhat(ss).png', description: ['Issued by Oracle Academy', 'Completed in 2025'], link: 'assets/Certifications/global_Certifications/Redhat(RH134).pdf', btnText: 'View Certificate' },
+    { title: 'MongoDB', image: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg', description: ['Issued by MongoDB University', 'Completed in 2025'], link: 'assets/Certifications/global_Certifications/Mongodb.pdf', btnText: 'View Certificate' }
   ];
 
   const digitalBadges = [
-    { title: 'HTML', image: '/assets/html(cs).png', description: ['Issued by Cisco', 'Completed in 2025'], link: 'https://www.credly.com/badges/8edb0a9e-9e7d-46fb-9b64-9b6da809919f/public_url', btnText: 'View Badge' },
-    { title: 'CSS', image: '/assets/css(cs).png', description: ['Issued by Cisco', 'Completed in 2025'], link: 'https://www.credly.com/badges/c770a91d-2b74-4a0a-b089-2ba3b70c0ed9/public_url', btnText: 'View Badge' },
-    { title: 'Javascript', image: '/assets/javas.png', description: ['Issued by Cisco', 'Completed in 2025'], link: 'https://www.credly.com/badges/15996165-2d95-45f5-82f8-8eceba81f508/public_url', btnText: 'View Badge' },
-    { title: 'Python', image: '/assets/python.png', description: ['Issued by Cisco', 'Completed in 2024'], link: 'https://www.credly.com/badges/9b7ff53f-42bd-4c36-8b2e-b95a44bff569/public_url', btnText: 'View Badge' },
-    { title: 'OS', image: '/assets/os.png', description: ['Issued by Cisco', 'Completed in 2024'], link: 'https://www.credly.com/badges/11cc48df-1230-44b6-be61-58d8e2ca2798/public_url', btnText: 'View Badge' }
+    { title: 'HTML', image: 'assets/Certifications/Digital_Badges/html(cs).png', description: ['Issued by Cisco', 'Completed in 2025'], link: 'https://www.credly.com/badges/8edb0a9e-9e7d-46fb-9b64-9b6da809919f/public_url', btnText: 'View Badge' },
+    { title: 'CSS', image: 'assets/Certifications/Digital_Badges/css(cs).png', description: ['Issued by Cisco', 'Completed in 2025'], link: 'https://www.credly.com/badges/c770a91d-2b74-4a0a-b089-2ba3b70c0ed9/public_url', btnText: 'View Badge' },
+    { title: 'Javascript', image: 'assets/Certifications/Digital_Badges/javas.png', description: ['Issued by Cisco', 'Completed in 2025'], link: 'https://www.credly.com/badges/15996165-2d95-45f5-82f8-8eceba81f508/public_url', btnText: 'View Badge' },
+    { title: 'Python', image: 'assets/Certifications/Digital_Badges/python.png', description: ['Issued by Cisco', 'Completed in 2024'], link: 'https://www.credly.com/badges/9b7ff53f-42bd-4c36-8b2e-b95a44bff569/public_url', btnText: 'View Badge' },
+    { title: 'OS', image: 'assets/Certifications/Digital_Badges/os.png', description: ['Issued by Cisco', 'Completed in 2024'], link: 'https://www.credly.com/badges/11cc48df-1230-44b6-be61-58d8e2ca2798/public_url', btnText: 'View Badge' }
   ];
 
   const renderGrid = (items) => {

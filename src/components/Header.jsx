@@ -35,35 +35,11 @@ const Header = () => {
         maxWidth: '1200px',
         margin: '0 auto',
         padding: '0 24px',
-        display: 'flex',
-        justifyContent: 'space-between',
+        display: 'grid',
+        gridTemplateColumns: '1fr auto 1fr',
         alignItems: 'center'
       }}>
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <div style={{
-            width: '40px',
-            height: '40px',
-            borderRadius: '50%',
-            background: 'var(--gradient-primary)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#fff',
-            fontWeight: 'bold',
-            fontSize: '20px',
-            boxShadow: '0 0 15px rgba(0, 247, 255, 0.3)'
-          }}>
-            D
-          </div>
-          <span style={{ 
-            fontSize: '20px', 
-            fontWeight: '600', 
-            letterSpacing: '1px',
-            color: 'var(--text-main)'
-          }}>
-            Deepthi
-          </span>
-        </Link>
+        <div className="header-left-spacer"></div>
 
         <nav className="header-nav" style={{
           display: 'flex',
@@ -72,6 +48,7 @@ const Header = () => {
           padding: '10px 30px',
           borderRadius: '50px',
           border: '1px solid rgba(255,255,255,0.05)',
+          justifySelf: 'center'
         }}>
           {navLinks.map((link) => (
             <Link 
@@ -96,7 +73,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <Link to="/contact" className="btn-primary" style={{ padding: '8px 20px', fontSize: '14px' }}>
+        <Link to="/contact" className="btn-primary" style={{ padding: '8px 20px', fontSize: '14px', justifySelf: 'end' }}>
           Let's Talk
         </Link>
       </div>

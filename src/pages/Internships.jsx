@@ -7,21 +7,21 @@ const Internships = () => {
       date: "Upcoming (June 2026)",
       desc: "Selected for an upcoming internship role as a C/C++ Developer at LG. Looking forward to contributing to enterprise-level software and expanding my systems engineering expertise.",
       certLink: "",
-      logo: "/assets/internships/LG.png"
+      logo: "assets/internships/LG.png"
     },
     {
       title: "Full Stack Development Intern @ Technical Hub",
       date: "May 2026 - June 2026",
       desc: "Worked as a Full Stack Development Intern at Technical Hub. Gained hands-on experience in building scalable web applications and collaborating effectively with development teams.",
       certLink: "",
-      logo: "/assets/internships/Technicalhub.png"
+      logo: "assets/internships/Technicalhub.png"
     },
     {
       title: "Full Stack Development Intern",
       date: "May 2025 - July 2025",
       desc: "Built responsive UI Webpages and HTML Layouts with CSS Designs. Delivered multiple features ahead of schedule.",
-      certLink: "/assets/react.png",
-      logo: "/assets/internships/Technicalhub.png"
+      certLink: "assets/react.png",
+      logo: "assets/internships/Technicalhub.png"
     }
   ];
 

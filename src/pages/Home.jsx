@@ -4,9 +4,7 @@ import Lottie from 'lottie-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import bookJson from '../assets/Book.json';
 import careernestJson from '../assets/Careernest.json';
-import dogwalkingJson from '../assets/Dogwalking.json';
 import liveChatbotJson from '../assets/LiveChatbot.json';
 
 import Internships from './Internships';
@@ -145,7 +143,7 @@ const Home = () => {
             </p>
             
             <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-              <a href="/assets/Deepthi_resume.pdf" target="_blank" rel="noreferrer" className="btn-primary">
+              <a href="assets/Deepthi_resume.pdf" target="_blank" rel="noreferrer" className="btn-primary">
                 View Resume
               </a>
               <div style={{ display: 'flex', gap: '15px', marginLeft: '10px' }}>
@@ -178,7 +176,7 @@ const Home = () => {
               maxWidth: '450px',
               aspectRatio: '3/4',
               borderRadius: '30px',
-              background: 'url(/assets/Professionalphoto1.png) center/cover',
+              background: 'url(assets/Professionalphoto1.png) center/cover',
               position: 'relative',
               boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
               border: '1px solid rgba(255,255,255,0.1)'

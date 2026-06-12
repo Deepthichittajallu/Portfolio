@@ -5,20 +5,20 @@ const Skills = () => {
 
   const skillsData = {
     coding: [
-      { title: "Leetcode", image: "/assets/leetcode.png", description: ["Solved 600+ problems", "Rating: 1666"], link: "https://leetcode.com/u/Deepthi_Chittajallu/", btnText: "View Profile" },
-      { title: "Codechef", image: "/assets/codechef.png", description: ["Solved 1100+ problems", "Max Rating: 1449"], link: "https://www.codechef.com/users/deepthi2403", btnText: "View Profile" },
-      { title: "HackerRank", image: "/assets/Hackerrank.png", description: ["Solved 300+ problems", "7 Badges"], link: "https://www.hackerrank.com/profile/chlakshmideepth1", btnText: "View Profile" },
-      { title: "Geeks for Geeks", image: "/assets/gfg.png", description: ["Solved 300+ problems", "Rating: 1724"], link: "https://www.geeksforgeeks.org/user/chlakshmidzjpq/", btnText: "View Profile" }
+      { title: "Leetcode", image: "assets/leetcode.png", description: ["Solved 600+ problems", "Rating: 1666"], link: "https://leetcode.com/u/Deepthi_Chittajallu/", btnText: "View Profile" },
+      { title: "Codechef", image: "assets/codechef.png", description: ["Solved 1100+ problems", "Max Rating: 1449"], link: "https://www.codechef.com/users/deepthi2403", btnText: "View Profile" },
+      { title: "HackerRank", image: "assets/Hackerrank.png", description: ["Solved 300+ problems", "7 Badges"], link: "https://www.hackerrank.com/profile/chlakshmideepth1", btnText: "View Profile" },
+      { title: "Geeks for Geeks", image: "assets/gfg.png", description: ["Solved 300+ problems", "Rating: 1724"], link: "https://www.geeksforgeeks.org/user/chlakshmidzjpq/", btnText: "View Profile" }
     ],
     technical: [
-      { title: "HTML5", image: "/assets/HTML.png", description: ["Semantic markup", "Accessibility"], link: "#", btnText: "View" },
-      { title: "CSS3", image: "/assets/css.png", description: ["Flexbox, Grid", "Animations"], link: "#", btnText: "View" },
-      { title: "JavaScript", image: "/assets/js.png", description: ["ES6+", "DOM Manipulation"], link: "#", btnText: "View" },
-      { title: "React", image: "/assets/react.png", description: ["Hooks, Context", "State Management"], link: "#", btnText: "View" },
-      { title: "Bootstrap", image: "/assets/bootstarp.png", description: ["Responsive Design", "Component Library"], link: "#", btnText: "View" },
-      { title: "MySQL", image: "/assets/mysql.png", description: ["Experienced in joins", "Indexing, procedures"], link: "#", btnText: "View" },
-      { title: "Git & GitHub", image: "/assets/git.png", description: ["Version control", "Collaboration workflows"], link: "#", btnText: "View Profile" },
-      { title: "Linux & Redhat", image: "/assets/linux.png", description: ["OS fundamentals", "Command line proficiency"], link: "#", btnText: "View" }
+      { title: "HTML5", image: "assets/HTML.png", description: ["Semantic markup", "Accessibility"], link: "#", btnText: "View" },
+      { title: "CSS3", image: "assets/css.png", description: ["Flexbox, Grid", "Animations"], link: "#", btnText: "View" },
+      { title: "JavaScript", image: "assets/js.png", description: ["ES6+", "DOM Manipulation"], link: "#", btnText: "View" },
+      { title: "React", image: "assets/react.png", description: ["Hooks, Context", "State Management"], link: "#", btnText: "View" },
+      { title: "Bootstrap", image: "assets/bootstarp.png", description: ["Responsive Design", "Component Library"], link: "#", btnText: "View" },
+      { title: "MySQL", image: "assets/mysql.png", description: ["Experienced in joins", "Indexing, procedures"], link: "#", btnText: "View" },
+      { title: "Git & GitHub", image: "assets/git.png", description: ["Version control", "Collaboration workflows"], link: "#", btnText: "View Profile" },
+      { title: "Linux & Redhat", image: "assets/linux.png", description: ["OS fundamentals", "Command line proficiency"], link: "#", btnText: "View" }
     ]
   };
 

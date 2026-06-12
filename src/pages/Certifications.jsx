@@ -5,30 +5,30 @@ const Certifications = () => {
 
   const certData = {
     global: [
-      { title: 'Oracle Database Foundations', image: '/assets/Certifications/global_Certifications/Oracle_database(ss).png', link: '/assets/Certifications/global_Certifications/Oracle_database.pdf' },
-      { title: 'Java Foundations', image: '/assets/Certifications/global_Certifications/Java_Oracle.png', link: '/assets/Certifications/global_Certifications/Java_Oracle.pdf' },
-      { title: 'Redhat', image: '/assets/Certifications/global_Certifications/redhat(ss).png', link: '/assets/Certifications/global_Certifications/Redhat(RH134).pdf' },
-      { title: 'MongoDB', image: '/assets/Certifications/global_Certifications/Mongodb_ss.png', link: '/assets/Certifications/global_Certifications/Mongodb.pdf' },
-      { title: 'GitHub', image: '/assets/Certifications/global_Certifications/Github_ss.png', link: '/assets/Certifications/global_Certifications/github.pdf' }
+      { title: 'Oracle Database Foundations', image: 'assets/Certifications/global_Certifications/Oracle_database(ss).png', link: 'assets/Certifications/global_Certifications/Oracle_database.pdf' },
+      { title: 'Java Foundations', image: 'assets/Certifications/global_Certifications/Java_Oracle.png', link: 'assets/Certifications/global_Certifications/Java_Oracle.pdf' },
+      { title: 'Redhat', image: 'assets/Certifications/global_Certifications/redhat(ss).png', link: 'assets/Certifications/global_Certifications/Redhat(RH134).pdf' },
+      { title: 'MongoDB', image: 'assets/Certifications/global_Certifications/Mongodb_ss.png', link: 'assets/Certifications/global_Certifications/Mongodb.pdf' },
+      { title: 'GitHub', image: 'assets/Certifications/global_Certifications/Github_ss.png', link: 'assets/Certifications/global_Certifications/github.pdf' }
     ],
     badges: [
-      { title: 'HTML', image: '/assets/Certifications/Digital_Badges/html(cs).png', link: 'https://www.credly.com/badges/8edb0a9e-9e7d-46fb-9b64-9b6da809919f/public_url' },
-      { title: 'CSS', image: '/assets/Certifications/Digital_Badges/css(cs).png', link: 'https://www.credly.com/badges/c770a91d-2b74-4a0a-b089-2ba3b70c0ed9/public_url' },
-      { title: 'Javascript', image: '/assets/Certifications/Digital_Badges/javas.png', link: 'https://www.credly.com/badges/15996165-2d95-45f5-82f8-8eceba81f508/public_url' },
-      { title: 'Python', image: '/assets/Certifications/Digital_Badges/python.png', link: 'https://www.credly.com/badges/9b7ff53f-42bd-4c36-8b2e-b95a44bff569/public_url' },
-      { title: 'OS', image: '/assets/Certifications/Digital_Badges/os.png', link: 'https://www.credly.com/badges/11cc48df-1230-44b6-be61-58d8e2ca2798/public_url' }
+      { title: 'HTML', image: 'assets/Certifications/Digital_Badges/html(cs).png', link: 'https://www.credly.com/badges/8edb0a9e-9e7d-46fb-9b64-9b6da809919f/public_url' },
+      { title: 'CSS', image: 'assets/Certifications/Digital_Badges/css(cs).png', link: 'https://www.credly.com/badges/c770a91d-2b74-4a0a-b089-2ba3b70c0ed9/public_url' },
+      { title: 'Javascript', image: 'assets/Certifications/Digital_Badges/javas.png', link: 'https://www.credly.com/badges/15996165-2d95-45f5-82f8-8eceba81f508/public_url' },
+      { title: 'Python', image: 'assets/Certifications/Digital_Badges/python.png', link: 'https://www.credly.com/badges/9b7ff53f-42bd-4c36-8b2e-b95a44bff569/public_url' },
+      { title: 'OS', image: 'assets/Certifications/Digital_Badges/os.png', link: 'https://www.credly.com/badges/11cc48df-1230-44b6-be61-58d8e2ca2798/public_url' }
     ],
     certificates: [
-      { title: 'HackerRank SQL Basic', image: '/assets/Certifications/Certificates/sql_basic.png', link: '/assets/Certifications/Certificates/Hackerrank_sql_basic.pdf' },
-      { title: 'Java Basic', image: '/assets/Certifications/Certificates/java_basic.png', link: '/assets/Certifications/Certificates/java_basic certificate (1) (1).pdf' },
-      { title: 'Oracle Course Completion', image: '/assets/Certifications/Certificates/Oracle_Course_Completion.png', link: '/assets/Certifications/Certificates/oraclecoursecompletion.pdf' },
-      { title: 'SQL Intermediate', image: '/assets/Certifications/Certificates/Sql_Intermediate.png', link: '/assets/Certifications/Certificates/sql_intermediate certificate.pdf' }
+      { title: 'HackerRank SQL Basic', image: 'assets/Certifications/Certificates/sql_basic.png', link: 'assets/Certifications/Certificates/Hackerrank_sql_basic.pdf' },
+      { title: 'Java Basic', image: 'assets/Certifications/Certificates/java_basic.png', link: 'assets/Certifications/Certificates/java_basic certificate (1) (1).pdf' },
+      { title: 'Oracle Course Completion', image: 'assets/Certifications/Certificates/Oracle_Course_Completion.png', link: 'assets/Certifications/Certificates/oraclecoursecompletion.pdf' },
+      { title: 'SQL Intermediate', image: 'assets/Certifications/Certificates/Sql_Intermediate.png', link: 'assets/Certifications/Certificates/sql_intermediate certificate.pdf' }
     ],
     achievements: [
-      { title: 'Trainee of the Month', image: '/assets/Certifications/Achievements/Trainee_of_the_month.png', link: '/assets/Certifications/Achievements/Trainee_of_the_month.png' },
-      { title: 'LeetCode 100+ Days', image: '/assets/Certifications/Achievements/leetcode100.png', link: '/assets/Certifications/Achievements/leetcode100.png' },
-      { title: 'LeetCode 200+ Days', image: '/assets/Certifications/Achievements/leetcode200.png', link: '/assets/Certifications/Achievements/leetcode200.png' },
-      { title: 'LeetCode Badge', image: '/assets/Certifications/Achievements/leetcodebadge.png', link: '/assets/Certifications/Achievements/leetcodebadge.png' }
+      { title: 'Trainee of the Month', image: 'assets/Certifications/Achievements/Trainee_of_the_month.png', link: 'assets/Certifications/Achievements/Trainee_of_the_month.png' },
+      { title: 'LeetCode 100+ Days', image: 'assets/Certifications/Achievements/leetcode100.png', link: 'assets/Certifications/Achievements/leetcode100.png' },
+      { title: 'LeetCode 200+ Days', image: 'assets/Certifications/Achievements/leetcode200.png', link: 'assets/Certifications/Achievements/leetcode200.png' },
+      { title: 'LeetCode Badge', image: 'assets/Certifications/Achievements/leetcodebadge.png', link: 'assets/Certifications/Achievements/leetcodebadge.png' }
     ]
   };
 
